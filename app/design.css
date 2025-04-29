@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Corinthia:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Corinthia:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Baloo Bhaina 2", cursive;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #969696;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar__top {
+  width: 100%;
+  height: 2.3rem;
+  background-color: #1b2c13;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.navbar__bottom {
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.navbar__top__text:hover {
+  cursor: pointer;
+}
+.navbar__bottom__boxes {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__bottom__boxes__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar__bottom__boxes__menuImage {
+  margin-left: 1rem;
+  margin-right: 0.7rem;
+}
+.navbar__bottom__boxes__menuImage:hover {
+  cursor: pointer;
+}
+.navbar__bottom__boxes__center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.navbar__bottom__boxes__center:hover {
+  cursor: pointer;
+}
+.navbar__bottom__boxes__centerTitle {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.navbar__bottom__boxes__centerSubtitle {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+}
+.navbar__bottom__boxes__icones {
+  width: 100%;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar__bottom__boxes__iconesButton {
+  margin-left: 1rem;
+  margin-right: 0.7rem;
+}
+.navbar__bottom__boxes__iconesButton:hover {
+  cursor: pointer;
+}
+.navbar__bottom__boxes__iconesSpan {
+  background: #c5c4c4;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+#navbar_icone_cart {
+  margin-right: 0.4rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  margin-top: 2.7rem;
+}
+.footer__guarantees__boxes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer__guarantees__box {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.footer__guarantees__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.footer__guarantees__text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+}
+.footer__other {
+  width: 100%;
+  height: auto;
+  background: #1b2c13;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2.7rem;
+}
+.footer__other__boxes {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.footer__other__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Baloo Bhaina 2", cursive;
+  color: #ffffff;
+}
+.footer__other__text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+  color: #ffffff;
+}
+.footer__sitemakersign {
+  width: 100%;
+  height: auto;
+  background: #1b2c13;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer__sitemakername {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+  color: #ffffff;
+}
+
+.index {
+  width: 100%;
+  height: auto;
+}
+.index__carousel {
+  width: 100vw;
+  height: 92vh;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.index__carousel__swiper {
+  width: 100vw;
+  height: 92vh;
+}
+.index__carousel__swiper__img {
+  width: 100vw;
+  height: 92vh;
+  object-fit: cover;
+  display: block;
+}
+.index__carousel__swiper__title {
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: #333 1px 1px 2px;
+}
+.index__carousel__swiper__subtitle {
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 57%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: #333 1px 1px 2px;
+  margin: auto;
+}
+.index__carousel__swiper__button {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 67%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 7%;
+  font-size: 1.4rem;
+  font-family: "Baloo Bhaina 2", cursive;
+  margin: auto;
+  background: #ffffff;
+  border: #1b2c13 1px solid;
+  border-radius: 3px;
+  padding: 3px;
+}
+.index__carousel__swiper__button:hover {
+  cursor: pointer;
+}
+.index__bestsellers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.index__bestsellers__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+.index__bestsellers__boxes {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.index__bestsellers__box {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.index__bestsellers__box__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  object-fit: fill;
+}
+.index__bestsellers__nameAndPrice {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+.index__bestsellers__name {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.index__products {
+  width: 57%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.index__products__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.index__products__box {
+  position: relative;
+  flex: 1 1 46%;
+  max-width: 48%;
+  min-width: 200px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index__products__box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.index__products__img {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+}
+.index__products__title {
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 75%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: #333 1px 1px 2px;
+}
+.index__products__subtitle {
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 89%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 80%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-shadow: #333 1px 1px 2px;
+  margin: auto;
+}
+.index__story {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.7rem;
+  padding-bottom: 3.2rem;
+  border-bottom: #9fafb9 1px solid;
+}
+.index__story__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+.index__story__text {
+  width: 40%;
+  height: 10%;
+  font-size: 2.7rem;
+  font-weight: 300;
+  font-family: "Corinthia", cursive;
+  margin-bottom: 2rem;
+  color: #9fafb9;
+  text-align: center;
+}
+
+/*# sourceMappingURL=design.css.map */
