@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int       @id @default(autoincrement())
+  civilite       String
+  firstName      String
+  lastName       String
+  email          String    @unique
+  passwordHash   String
+  birthday       DateTime?
+  registrationAt DateTime  @default(now())
+  roleCode       String    @default("1001")
+  addresses      Address[]
+  orders         Order[]
+}
+
+model Address {
+  id           Int    @id @default(autoincrement())
+  user         User   @relation(fields: [userId], references: [id])
+  userId       Int
+  addressLine1 String
+  addressLine2 String?
+  city         String
+  postalCode   String
+  country      String
+  orders       Order[]
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  price       Decimal   @db.Decimal(10,2)
+  imageUrl    String?
+  description String?
+  stock       Int      @default(0)
+  orderItems  OrderItem[]
+}
+
+model Order {
+  id         Int        @id @default(autoincrement())
+  user       User       @relation(fields: [userId], references: [id])
+  userId     Int
+  address    Address?   @relation(fields: [addressId], references: [id])
+  addressId  Int?
+  orderDate  DateTime   @default(now())
+  status     OrderStatus @default(EN_COURS)
+  items      OrderItem[]
+}
+
+model OrderItem {
+  id        Int     @id @default(autoincrement())
+  order     Order   @relation(fields: [orderId], references: [id])
+  orderId   Int
+  product   Product @relation(fields: [productId], references: [id])
+  productId Int
+  quantity  Int
+  price     Decimal @db.Decimal(10,2)
+}
+
+model Announcement {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String?
+  startDate DateTime?
+  endDate   DateTime?
+  isActive  Boolean  @default(true)
+}
+
+model AdminStats {
+  id          Int      @id @default(autoincrement())
+  totalUsers  Int
+  totalOrders Int
+  lastUpdate  DateTime @default(now())
+}
+
+enum OrderStatus {
+  EN_COURS
+  EXPEDIEE
+  LIVREE
+  ANNULEE
+}

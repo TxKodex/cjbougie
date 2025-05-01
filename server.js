@@ -1,5 +1,6 @@
-import { createRequestHandler } from "@remix-run/express";
 import express from "express";
+import { createRequestHandler } from "@remix-run/express";
+import usersRouter from "./routes/users.js";
 
 const viteDevServer =
   process.env.NODE_ENV === "production"
@@ -18,6 +19,9 @@ app.use(
 const build = viteDevServer
   ? () => viteDevServer.ssrLoadModule("virtual:remix/server-build")
   : await import("./build/server/index.js");
+
+// API
+app.use("/api/users", usersRouter);
 
 app.all("*", createRequestHandler({ build }));
 

@@ -12,9 +12,12 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@prisma/client": "^6.7.0",
     "@remix-run/node": "^2.16.5",
     "@remix-run/react": "^2.16.5",
+    "bcryptjs": "^3.0.2",
     "isbot": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^11.2.6"
@@ -34,6 +37,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.38",
+    "prisma": "^6.7.0",
     "sass": "^1.87.0",
     "typescript": "^5.1.6",
     "vite": "^6.0.0",
