@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export const meta: MetaFunction = () => [
-  { title: "New Remix App" },
+  { title: "C&J Bougies" },
   { name: "description", content: "Welcome to Remix!" },
 ];
 
@@ -28,7 +28,9 @@ export default function Index() {
               alt="Slide 1"
               className="index__carousel__swiper__img"
             />
-            <h2 className="index__carousel__swiper__title">La Bougie Astrale</h2>
+            <h2 className="index__carousel__swiper__title">
+              La Bougie Astrale
+            </h2>
             <p className="index__carousel__swiper__subtitle">
               La bougie qui vous fait voyager dans le temps.
             </p>
@@ -42,7 +44,9 @@ export default function Index() {
               alt="Slide 2"
               className="index__carousel__swiper__img"
             />
-            <h2 className="index__carousel__swiper__title">La Bougie pour la fête des mère</h2>
+            <h2 className="index__carousel__swiper__title">
+              La Bougie pour la fête des mère
+            </h2>
             <p className="index__carousel__swiper__subtitle">
               La bougie qui rend heureuse.
             </p>

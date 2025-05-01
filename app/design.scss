@@ -40,6 +40,24 @@ body {
   overflow-x: hidden;
 }
 
+Link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 // Navbar Styles
 // This is the main navbar for the app
 .navbar {
@@ -48,6 +66,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: $grey 1px solid;
 
   // This is the top part of the navbar
   &__top {
@@ -147,6 +166,10 @@ body {
   &__bottom__boxes__iconesButton {
     margin-left: 1rem;
     margin-right: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     &:hover {
       cursor: pointer;
     }
@@ -172,7 +195,8 @@ body {
 .footer {
   width: 100%;
   height: auto;
-  margin-top: 2.7rem;
+  margin-top: auto;
+
   &__guarantees__boxes {
     width: 100%;
     height: auto;
@@ -182,6 +206,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: $grey 1px solid;
+    padding-top: 0.7rem;
   }
   &__guarantees__box {
     width: 20%;
@@ -527,4 +553,137 @@ body {
     color: $grey;
     text-align: center;
   }
+}
+
+// Register Styles
+// This is the main register page for the app
+.register,
+.login {
+  width: 100%;
+  height: 61.3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1.4rem;
+
+  &__title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+    font-family: $font-secondary;
+  }
+  &__subtitle {
+    width: 40%;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: $font-primary;
+    margin-bottom: 2rem;
+    color: $grey;
+    text-align: center;
+  }
+  &__form {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  &__box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+  }
+  &__select {
+    width: 100%;
+    height: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    padding: 13px 20px 10px 4px;
+    font-size: 1rem;
+  }
+  &__input {
+    width: 46%;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+  }
+  &__button {
+    width: 100%;
+    height: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    background-color: $navbar-top-color;
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    transition: all 0.3s ease-in-out;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: lighten($navbar-top-color, 10%);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__text {
+    width: 25%;
+    height: auto;
+    background: lighten($grey, 17%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: $font-primary;
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+  }
+  &__link {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: $font-primary;
+    color: darken($grey, 40%);
+    margin-top: 0.3rem;
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+#email,
+#mdp_login {
+  width: 100%;
 }

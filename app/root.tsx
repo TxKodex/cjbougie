@@ -1,5 +1,6 @@
 import {
   Links,
+  Link,
   Meta,
   Outlet,
   Scripts,
@@ -51,12 +52,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
             <div className="navbar__bottom__boxes" id="navbar_box_01">
-              <div className="navbar__bottom__boxes__center">
+              <Link to="/" className="navbar__bottom__boxes__center">
                 <h1 className="navbar__bottom__boxes__centerTitle">
                   C&J Bougies
                 </h1>
                 <p className="navbar__bottom__boxes__centerSubtitle">C&J</p>
+              </Link>
               </div>
+              <div className="navbar__bottom__boxes__center">
             </div>
             <div className="navbar__bottom__boxes" id="navbar_box_02">
               <div className="navbar__bottom__boxes__icones">
@@ -67,6 +70,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   className="navbar__bottom__boxes__iconesButton"
                   id="navbar_icone_search"
                 />
+                <Link to="/login" className="navbar__bottom__boxes__iconesButton">
                 <img
                   src="/icones/user.png"
                   alt="Profil button"
@@ -74,6 +78,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   className="navbar__bottom__boxes__iconesButton"
                   id="navbar_icone_user"
                 />
+                </Link>
                 <img
                   src="/icones/cart.png"
                   alt="Cart button"
@@ -86,7 +91,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </nav>
-        {children}
+        <main className="app-content">{children}</main>
         <footer>
           <div className="footer">
             <div className="footer__guarantees__boxes">
@@ -136,9 +141,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <p className="footer__other__text">FAQ</p>
               </div>
             </div>
-          </div>
-          <div className="footer__sitemakersign">
-            <p className="footer__sitemakername">TxKode</p>
+            <div className="footer__sitemakersign">
+              <p className="footer__sitemakername">TxKode</p>
+            </div>
           </div>
         </footer>
         <ScrollRestoration />

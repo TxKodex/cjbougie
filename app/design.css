@@ -22,12 +22,31 @@ body {
   overflow-x: hidden;
 }
 
+Link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #969696;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: #9fafb9 1px solid;
 }
 .navbar__top {
   width: 100%;
@@ -114,6 +133,10 @@ body {
 .navbar__bottom__boxes__iconesButton {
   margin-left: 1rem;
   margin-right: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .navbar__bottom__boxes__iconesButton:hover {
   cursor: pointer;
@@ -137,7 +160,7 @@ body {
 .footer {
   width: 100%;
   height: auto;
-  margin-top: 2.7rem;
+  margin-top: auto;
 }
 .footer__guarantees__boxes {
   width: 100%;
@@ -148,6 +171,8 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  border: #9fafb9 1px solid;
+  padding-top: 0.7rem;
 }
 .footer__guarantees__box {
   width: 20%;
@@ -477,6 +502,145 @@ body {
   margin-bottom: 2rem;
   color: #9fafb9;
   text-align: center;
+}
+
+.register,
+.login {
+  width: 100%;
+  height: 61.3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1.4rem;
+}
+.register__title,
+.login__title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+.register__subtitle,
+.login__subtitle {
+  width: 40%;
+  height: auto;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-family: "Baloo Bhaina 2", cursive;
+  margin-bottom: 2rem;
+  color: #9fafb9;
+  text-align: center;
+}
+.register__form,
+.login__form {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.register__box,
+.login__box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.register__select,
+.login__select {
+  width: 100%;
+  height: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  padding: 13px 20px 10px 4px;
+  font-size: 1rem;
+}
+.register__input,
+.login__input {
+  width: 46%;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+}
+.register__button,
+.login__button {
+  width: 100%;
+  height: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  background-color: #1b2c13;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.register__button:hover,
+.login__button:hover {
+  cursor: pointer;
+  background: rgb(48.8571428571, 79.619047619, 34.380952381);
+  transition: all 0.3s ease-in-out;
+}
+.register__text,
+.login__text {
+  width: 25%;
+  height: auto;
+  background: rgb(209.1397590361, 216.7831325301, 221.5602409639);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "Baloo Bhaina 2", cursive;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+}
+.register__link,
+.login__link {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "Baloo Bhaina 2", cursive;
+  color: rgb(59.0361445783, 72.5301204819, 80.9638554217);
+  margin-top: 0.3rem;
+  text-decoration: underline;
+}
+.register__link:hover,
+.login__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#email,
+#mdp_login {
+  width: 100%;
 }
 
 /*# sourceMappingURL=design.css.map */
