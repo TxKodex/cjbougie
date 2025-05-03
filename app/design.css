@@ -643,4 +643,181 @@ a:focus {
   width: 100%;
 }
 
+.dashboardNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 7%;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #3c3d37;
+}
+.dashboardNav__top {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  color: #ffffff;
+  border-bottom: #ebd3f8 2px solid;
+}
+.dashboardNav__logo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  color: #ebd3f8;
+  text-align: center;
+  text-shadow: #333 3px 2px 2px;
+}
+.dashboardNav__content {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: auto;
+}
+.dashboardNav__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.dashboardNav__icon:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+.dashboardNav__bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.dashboardHome {
+  width: 100%;
+  height: 100vh;
+  margin-left: 7%;
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #1e201e;
+  padding-top: 2rem;
+  color: #ecdfcc;
+}
+.dashboardHome__top {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboardHome__title {
+  width: 100%;
+  height: 50%;
+  font-size: 2.7rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.dashboardHome__date {
+  width: 100%;
+  height: 25%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding-left: 0.4rem;
+}
+.dashboardHome__content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboardHome__content__box {
+  width: 37%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background: #3c3d37;
+  border-radius: 10px;
+  padding: 1rem;
+  border: #ecdfcc 2px solid;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardHome__content__box:hover {
+  cursor: pointer;
+  scale: 1.01;
+  border: #ebd3f8 2px solid;
+  box-shadow: #ebd3f8 0px 2px 8px 0px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardHome__content__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.dashboardHome__content__value {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.dashboardHome__content__pieBox {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lastOrders,
+#bestSellers {
+  height: 40%;
+}
+
 /*# sourceMappingURL=design.css.map */

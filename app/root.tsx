@@ -12,7 +12,7 @@ import "./design.scss";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const matches = useMatches();
-  const noLayout = matches.some((m) => m.handle?.noLayout);
+  const noLayout = matches.some((m) => (m.handle as any)?.noLayout);
 
   return (
     <html lang="en">

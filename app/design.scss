@@ -17,6 +17,11 @@ $font-caligraph: "Corinthia", cursive;
 $white: #ffffff;
 $grey: #9fafb9;
 $navbar-top-color: #1b2c13;
+$pink: #ad49e1;
+$pink-light: #ebd3f8;
+$dark-mode-light: #3c3d37;
+$dark-mode-dark: #1e201e;
+$dark-mode-white: #ecdfcc;
 
 * {
   margin: 0;
@@ -687,3 +692,186 @@ a:focus {
 #mdp_login {
   width: 100%;
 }
+
+// Dashboard Styles
+.dashboardNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 7%;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: $dark-mode-light;
+
+  &__top {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    color: $white;
+    border-bottom: $pink-light 2px solid;
+  }
+  &__logo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    color: $pink-light;
+    text-align: center;
+    text-shadow: #333 3px 2px 2px;
+  }
+  &__content {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: auto;
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.1;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+}
+
+.dashboardHome {
+  width: 100%;
+  height: 100vh;
+  margin-left: 7%;
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: $dark-mode-dark;
+  padding-top: 2rem;
+  color: $dark-mode-white;
+  &__top {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    width: 100%;
+    height: 50%;
+    font-size: 2.7rem;
+    font-weight: 500;
+    font-family: $font-primary;
+  }
+  &__date {
+    width: 100%;
+    height: 25%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    padding-left: 0.4rem;
+  }
+  &__content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__content__box {
+    width: 37%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background: $dark-mode-light;
+    border-radius: 10px;
+    padding: 1rem;
+    border: $dark-mode-white 2px solid;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.01;
+      border: $pink-light 2px solid;
+      box-shadow: $pink-light 0px 2px 8px 0px;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+  &__content__title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: $font-primary;
+  }
+  &__content__value {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $font-primary;
+  }
+  &__content__pieBox {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#lastOrders,
+#bestSellers {
+  height: 40%;
+}
+
