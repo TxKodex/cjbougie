@@ -655,6 +655,7 @@ a:focus {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-right: #1e201e 2px solid;
   background: #3c3d37;
 }
 .dashboardNav__top {
@@ -818,6 +819,299 @@ a:focus {
 #lastOrders,
 #bestSellers {
   height: 40%;
+}
+
+.dashboardProducts {
+  width: 100%;
+  height: 100vh;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #1e201e;
+  color: #ecdfcc;
+}
+.dashboardProducts__homeButton {
+  width: 93%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.dashboardProducts__list, .dashboardProducts__manage {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #3c3d37;
+  font-size: 2rem;
+  padding: 7px;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__list:hover, .dashboardProducts__manage:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__Link {
+  color: #ecdfcc;
+}
+.dashboardProducts__nav {
+  width: 89%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  background: #3c3d37;
+}
+.dashboardProducts__nav__back {
+  width: 12%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboardProducts__nav__Link {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.dashboardProducts__nav__img {
+  background: #ecdfcc;
+  padding: 7px;
+  border: solid 1px #1e201e;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__nav__img:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__nav__text {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.dashboardProducts__nav__title {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboardProducts__nav__button {
+  width: 25%;
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ecdfcc;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__nav__button:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__content {
+  width: 89%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.dashboardProducts__imgBox {
+  width: 35%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #3c3d37;
+  border-radius: 13px;
+  border: #ecdfcc 2px solid;
+}
+.dashboardProducts__imgBox__titleBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: #ecdfcc 1px solid;
+}
+.dashboardProducts__imgBox__title {
+  width: 90%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding-left: 10px;
+}
+.dashboardProducts__imgBox__imgBox {
+  width: 39%;
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  object-fit: fill;
+  margin: auto;
+  border: #ecdfcc 2px solid;
+  border-radius: 13px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.dashboardProducts__imgBox__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 11px;
+}
+.dashboardProducts__imgUploadButton::file-selector-button {
+  width: 50%;
+  height: auto;
+  background: #ecdfcc;
+  padding: 7px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__imgUploadButton::file-selector-button:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  transition: all 0.1s ease-in-out;
+}
+.dashboardProducts__productInformation {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3c3d37;
+  border-radius: 13px;
+  border: #ecdfcc 2px solid;
+}
+.dashboardProducts__productInformation__titleBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #ecdfcc 1px solid;
+  margin-bottom: 1.2rem;
+}
+.dashboardProducts__productInformation__title {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding-left: 10px;
+}
+.dashboardProducts__productInformation__inputBox {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+.dashboardProducts__productInformation__label {
+  font-weight: 600;
+}
+.dashboardProducts__productInformation__input, .dashboardProducts__productInformation__textarea, .dashboardProducts__productInformation__select {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 7px;
+  border: #ecdfcc 1px solid;
+  background: #3c3d37;
+  color: #ecdfcc;
+}
+.dashboardProducts__productInformation__input:focus, .dashboardProducts__productInformation__textarea:focus, .dashboardProducts__productInformation__select:focus {
+  outline: none;
+}
+.dashboardProducts__productInformation__priceBox {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#manageProducts {
+  color: #ecdfcc;
+}
+
+#productDescription {
+  height: 5rem;
+}
+
+#productPrice, #productDiscount, #productFinalPrice {
+  width: 100%;
+}
+
+#productPriceBox {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#productCategory {
+  height: 2.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px;
+}
+
+#productStock {
+  width: 30%;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=design.css.map */

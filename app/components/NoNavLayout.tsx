@@ -1,4 +1,5 @@
 import { Outlet } from "@remix-run/react";
+import { Form, Link, useActionData } from "@remix-run/react";
 
 export default function NoNavLayout() {
   return (
@@ -20,12 +21,14 @@ export default function NoNavLayout() {
             className="dashboardNav__icon"
             width="40"
           />
-          <img
-            src="/icones/servers_dm.png"
-            alt="Database icon"
-            className="dashboardNav__icon"
-            width="40"
-          />
+          <Link to="/dashboard/products">
+            <img
+              src="/icones/servers_dm.png"
+              alt="Database icon"
+              className="dashboardNav__icon"
+              width="40"
+            />
+          </Link>
         </div>
         <div className="dashboardNav__bottom">
           <img
