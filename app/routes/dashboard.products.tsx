@@ -8,20 +8,16 @@ export default function DashboardProducts() {
   return (
     <div className="dashboardProducts">
       <div className="dashboardProducts__homeButton">
-        <div className="dashboardProducts__list">
-          <Link to="/dashboard/list" className="dashboardProducts__Link">
-            Liste des produits
-          </Link>
-        </div>
-        <div className="dashboardProducts__manage">
-          <Link
-            to="/dashboard/manageProducts"
-            className="dashboardProducts__Link"
-            id="manageProducts"
-          >
-            Ajouter un produit
-          </Link>
-        </div>
+        <Link to="/dashboard/list" className="dashboardProducts__list">
+          <p className="dashboardProducts__Link">Liste des produits</p>
+        </Link>
+        <Link
+          to="/dashboard/manageProducts"
+          className="dashboardProducts__manage"
+          id="manageProducts"
+        >
+          <p className="dashboardProducts__Link">Ajouter un produit</p>
+        </Link>
       </div>
     </div>
   );

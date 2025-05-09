@@ -9,12 +9,14 @@ export default function NoNavLayout() {
           <p className="dashboardNav__logo">C&J</p>
         </div>
         <div className="dashboardNav__content">
-          <img
-            src="/icones/dashboard_dm.png"
-            alt="Dashboard icon"
-            className="dashboardNav__icon"
-            width="40"
-          />
+          <Link to={"/dashboard/home"}>
+            <img
+              src="/icones/dashboard_dm.png"
+              alt="Dashboard icon"
+              className="dashboardNav__icon"
+              width="40"
+            />
+          </Link>
           <img
             src="/icones/graph_dm.png"
             alt="Stats icon"

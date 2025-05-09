@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Bougie Vanille",
+    "photo": "/images/products/vanille.jpg",
+    "stock": 25,
+    "price": 12.9
+  },
+  {
+    "id": 2,
+    "name": "Bougie Lavande",
+    "photo": "/images/products/lavande.jpg",
+    "stock": 18,
+    "price": 13.5
+  },
+  {
+    "id": 3,
+    "name": "Bougie Fleur d'Oranger",
+    "photo": "/images/products/oranger.jpg",
+    "stock": 30,
+    "price": 14.0
+  },
+  {
+    "id": 4,
+    "name": "Bougie Jasmin",
+    "photo": "/images/products/jasmin.jpg",
+    "stock": 12,
+    "price": 15.0
+  },
+  {
+    "id": 5,
+    "name": "Bougie Coton",
+    "photo": "/images/products/coton.jpg",
+    "stock": 20,
+    "price": 11.9
+  },
+  {
+    "id": 6,
+    "name": "Bougie Monoï",
+    "photo": "/images/products/monoi.jpg",
+    "stock": 8,
+    "price": 16.5
+  },
+  {
+    "id": 7,
+    "name": "Bougie Musc Blanc",
+    "photo": "/images/products/musc.jpg",
+    "stock": 14,
+    "price": 13.9
+  },
+  {
+    "id": 8,
+    "name": "Bougie Cannelle",
+    "photo": "/images/products/cannelle.jpg",
+    "stock": 22,
+    "price": 12.5
+  },
+  {
+    "id": 9,
+    "name": "Bougie Rose",
+    "photo": "/images/products/rose.jpg",
+    "stock": 10,
+    "price": 14.9
+  },
+  {
+    "id": 10,
+    "name": "Bougie Patchouli",
+    "photo": "/images/products/patchouli.jpg",
+    "stock": 16,
+    "price": 15.5
+  },
+  {
+    "id": 11,
+    "name": "Bougie Ambre",
+    "photo": "/images/products/ambre.jpg",
+    "stock": 19,
+    "price": 13.2
+  },
+  {
+    "id": 12,
+    "name": "Bougie Santal",
+    "photo": "/images/products/santal.jpg",
+    "stock": 7,
+    "price": 16.0
+  },
+  {
+    "id": 13,
+    "name": "Bougie Citron",
+    "photo": "/images/products/citron.jpg",
+    "stock": 21,
+    "price": 12.8
+  },
+  {
+    "id": 14,
+    "name": "Bougie Menthe",
+    "photo": "/images/products/menthe.jpg",
+    "stock": 13,
+    "price": 13.7
+  },
+  {
+    "id": 15,
+    "name": "Bougie Coco",
+    "photo": "/images/products/coco.jpg",
+    "stock": 17,
+    "price": 14.3
+  }
+]
